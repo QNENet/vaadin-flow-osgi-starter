@@ -1,0 +1,29 @@
+-buildpath: \
+	osgi.annotation;version=7.0.0,\
+	osgi.core;version=7.0.0,\
+	osgi.cmpn;version=7.0.0,\
+	com.vaadin.flow.component.button,\
+	com.vaadin.flow.component.notification,\
+	com.vaadin.flow.component.orderedlayout,\
+	com.vaadin.flow.server,\
+	com.vaadin.flow.theme.lumo,\
+	javax.servlet-api,\
+	com.vaadin.flow.osgi
+
+-testpath: \
+	${junit},\
+	${mockito},\
+	${mockito-deps}
+
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 0.0.0.${tstamp}
+
+-runrequires: bnd.identity;id='net.qnenet.flow-starter'
+
+Vaadin-OSGi-Extender: true
+
+Export-Package: net.qnenet.flow_starter.*
+
+Import-Package: *
