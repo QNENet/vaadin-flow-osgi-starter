@@ -2,7 +2,6 @@
 -runee: JavaSE-1.8
 -runprovidedcapabilities: ${native_capability}
 
-peter
 
 -runproperties: \
 	osgi.console=,\
@@ -35,7 +34,8 @@ peter
 	slf4j.api;version='[1.7.25,1.7.26)',\
 	slf4j.simple;version='[1.7.25,1.7.26)',\
 	org.apache.felix.http.jetty;version='[4.0.6,4.0.7)',\
-	org.osgi.service.log;version='[1.4.0,1.4.1)'
+	org.osgi.service.log;version='[1.4.0,1.4.1)',\
+	org.apache.aries.spifly.static.bundle;version='[1.0.12,1.0.13)'
 
 -runrequires: \
 	bnd.identity;id='net.qnenet.flow-starter',\
